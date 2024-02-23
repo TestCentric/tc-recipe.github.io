@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="/assets/bootstrap/bootstrap.css" rel="stylesheet" />
+                <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Roboto+Slab:wght@400;700&family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet" data-no-mirror>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.26.0/themes/prism.css">
+        <link href="/assets/css/theme.css" rel="stylesheet" />
+        <link href="/assets/css/styles.css" rel="stylesheet" />
+        <link href="/css/overrides.css" rel="stylesheet" />
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/a1cad7ed9a.js" crossorigin="anonymous" data-no-mirror></script>
+        <script src="https://cdn.jsdelivr.net/npm/mermaid@8.4.8/dist/mermaid.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/svg-pan-zoom@3.6.1/dist/svg-pan-zoom.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/prismjs@1.26.0/components/prism-core.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/prismjs@1.26.0/plugins/autoloader/prism-autoloader.min.js" data-no-mirror></script>
+        <script src="https://cdn.jsdelivr.net/npm/quicklink@2.0.0/dist/quicklink.umd.js"></script>
+	    
+        <!-- Lunr search -->
+
+        
+
+        
+
+        <title>TestCentric - Build Settings</title>
+    </head>
+    <body class="d-flex flex-column">
+        <div class="flex-grow-1 d-flex flex-column">
+            <div class="bg-nav">
+                <div class="container-xl py-3">
+                    <div class="row">
+                        <div class="offset-lg-2 col-12 col-lg-8 px-0">
+                            <nav class="navbar navbar-expand-md navbar-light align-items-start">
+    <a class="navbar-brand" href="/">
+                <img id="logo" src="/img/NewTestCentricLogo.png" alt="TestCentric">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse-topnav" aria-controls="collapse-topnav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="collapse-topnav" class="collapse navbar-collapse flex-wrap">
+        <ul class="navbar-nav mr-auto">
+            
+        </ul>
+        <ul class="navbar-nav">
+                    <li class="nav-item">
+            <a class="nav-link" href="/docs">Documentation</a>
+        </li>
+
+            
+        </ul>
+    </div>
+</nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="flex-grow-1 d-flex flex-column">
+                    <!-- Titlebar -->
+                    <div id="titlebar" class="py-4">
+                        <div class="container-xl">
+                            <div class="row">
+                                <div class="offset-lg-2 col-12 col-lg-8 px-3 px-lg-0 w-100 d-flex flex-wrap align-items-end">
+                                    <div class="flex-grow-1">
+                                        <div class="breadcrumbs d-flex flex-column flex-md-row text-break">
+
+        <span><a href="/docs">Documentation</a></span>
+        <span><a href="/docs/fundamentals">Fundamentals</a></span>
+                                        </div>
+                                        <div class="text-white m-0 text-break title">
+
+Build Settings
+                                        </div>
+                                    </div>
+                                        <div class="navbar navbar-expand-md navbar-dark p-0">
+                                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#left-sidebar" aria-controls="left-sidebar" aria-expanded="false" aria-label="Toggle navigation">
+                                                <span class="navbar-toggler-icon"></span>
+                                            </button>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Under title -->
+                    <div id="undertitle">
+                        <div class="container-xl">
+                            <div class="row">
+                                    <div class="col-md-3 col-lg-2">
+                                    </div>
+                                    <div class="col-md-9 col-lg-8 bg-white">
+                                    </div>
+                                <div class="col-lg-2 d-none d-lg-block">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                <!-- Body -->
+                <div class="flex-grow-1 d-flex flex-column">
+                        <div class="container-xl flex-grow-1 d-flex flex-column">
+                            <div class="row flex-grow-1 align-items-stretch">
+                                        <div class="col-md-3 col-lg-2 p-md-0 m-md-0 bg-body">
+                                            <div id="left-sidebar" class="sidebar collapse px-0 px-md-3 pt-3">
+
+<div class="sidebar-root">
+
+<div class="sidebar-nav-item">
+    <a href="/docs">Documentation</a>
+</div>
+<div class="sidebar-nav-item">
+    <a href="/docs/overview">Overview</a>
+</div>
+<div class="sidebar-nav-item has-children">
+    <a href="/docs/fundamentals">Fundamentals</a>
+</div>                <div class="sidebar-nav-children">
+
+<div class="sidebar-nav-item">
+    <a href="/docs/fundamentals/directory-structure">Directory Structure</a>
+</div>
+<div class="sidebar-nav-item">
+    <a href="/docs/fundamentals/build.cake">build.cake</a>
+</div>
+<div class="sidebar-nav-item">
+    <a href="/docs/fundamentals/load-statement">Load Statement</a>
+</div>
+<div class="sidebar-nav-item active">
+    <a href="/docs/fundamentals/build-settings">Build Settings</a>
+</div>
+<div class="sidebar-nav-item">
+    <a href="/docs/fundamentals/package-definition">Package Definition</a>
+</div>
+<div class="sidebar-nav-item">
+    <a href="/docs/fundamentals/run-command">Run Command</a>
+</div>                </div>
+
+<div class="sidebar-nav-item has-children">
+    <a href="/docs/usage">Usage</a>
+</div>                <div class="sidebar-nav-children">
+
+<div class="sidebar-nav-item">
+    <a href="/docs/usage/usage">Usage</a>
+</div>                </div>
+</div>                                            </div>
+                                        </div>
+                                        <div id="content" class="col-md-9 col-lg-8 p-4 pt-md-0 bg-white">
+<style>
+    td, th { border: solid 1px black; padding: 0 10px }
+	th { background-color: #eee}
+</style>
+<h3 id="initialization">Initialization</h3>
+<p>The static class <code>BuildSettings</code> holds the parameters used by your build. You initialize the settings immedieately after loading the recipe by calling the <code>BuildSettings.Initialize</code> method, which has the following signature:</p>
+<pre><code>	public static void Initialize(
+	 // Required parameters
+		ICakeContext context,
+		string title,
+		string githubRepository,
+     
+	 // Optional parameters
+		bool suppressHeaderCheck = false,
+		string[] standardHeader = null,
+		string copyright = null,
+		string[] exemptFiles = null,
+
+		string solutionFile = null,
+		string[] validConfigurations = null,
+		bool msbuildAllowPreviewVersion = false,
+		string githubOwner = &quot;TestCentric&quot;,
+		
+		string unitTests = null, // Defaults to &quot;**/*.tests.dll|**/*.tests.exe&quot; (case insensitive)
+		TestRunner unitTestRunner = null, // If not set, NUnitLite is used
+		string unitTestArguments = null,
+
+		string defaultTarget = null, // Defaults to &quot;Build&quot;
+		
+		// Verbosity
+		Verbosity msbuildVerbosity = Verbosity.Minimal,
+		NuGetVerbosity nugetVerbosity = NuGetVerbosity.Normal,
+		bool chocolateyVerbosity = false );
+</code></pre>
+<p>NOTES:</p>
+<ol>
+<li>Since the call to <code>Initialize</code> is made at the top level in the script, you can pass in the current <code>Context</code> directly.</li>
+<li>Default values are used for all omitted parameters. You should only specify them if you don't want the default.</li>
+<li>If no solution file is specified and only one is present in the directory, we use it.</li>
+<li>Only the default unit test pattern is case-insensitive. If you specify a pattern yourself, you must use the correct casing. Best practice is to name your test files so that the default may be used.</li>
+<li>In general, we use NUnitLite for unit tests.</li>
+<li>The <code>unitTestArguments</code> parameter is handy for tracing all unit tests.</li>
+</ol>
+<h3 id="properties">Properties</h3>
+<p><code>BuildSettings</code> exposes a number of properties, which are used in the recipe and may also be used by your own scripts, provided that <code>BuildSettings.Initialize</code> has been called at the point where you use them. Although a few properties allow set access because of how they are used internally, you should not change any of them in your own code.</p>
+<table>
+<tr><th>Property Name</th><th>Type</th><th>Usage</th>
+<tr><td>Context</td><td>ICakeContext</td><td>The Cake context under which we are running</td>
+<tr><td>Target</td><td>string</td><td>The target task chosen by the user</td></tr>
+<tr><td>TasksToExecute</td><td>string[]</td><td>Array of tasks which will be run</td></tr>
+<tr><td>IsLocalBuild</td><td>bool</td><td>True if this is a local (desktop) build</td></tr>
+<tr><td>IsRunningOnUnix</td><td>bool</td><td>True if we are running on Unix or Linux</td></tr>
+<tr><td>IsRunningOnWindows</td><td>bool</td><td>True if we are running on Windows</td></tr>
+<tr><td>IsRunningOnAppVeyor</td><td>bool</td><td>True if we are running under AppVeyor CI</td></tr>
+<tr><th colspan=3>Building</th></tr>
+<tr><td>Title</td><td>string</td><td>The title of this project</td></tr>
+<tr><td>SolutionFile</td><td>string</td><td>File name of the solution</td></tr>
+<tr><td>Configuration</td><td>string</td><td>The selected configuration</td></tr>
+<tr><td>ValidConfigurations</td><td>string[]</td><td>Array of valid configurations, for checking</td></tr>
+<tr><td>SuppressHeaderCheck</td><td>bool</td><td>If true, we skip checking the headers of source files</td></tr>
+<tr><td>StandardHeader</td><td>string[]</td><td>Standard header text</td></tr>
+<tr><td>ExemptFiles</td><td>string[]</td><td>File names exempt from checking</td></tr>
+<tr><td>MSBuildAllowPreviewVersion</td><td>bool</td><td>Used for testing preview versions of .NET</td></tr>
+<tr><td>MSBuildVerbosity</td><td>Verbosity</td><td>Verbosity for MSBuild operations</td></tr>
+<tr><td>MSBuildSettings</td><td>MSBuildSettings</td><td>Standard MSBuildSettings</td></tr>
+<tr><td>ShouldAddToLocalFeed</td><td>bool</td><td>If true, each bu</td></tr>
+<tr><td>NuGetVerbosity</td><td>NuGetVerbosity</td><td>Verbosity for NuGet operations</td></tr>
+<tr><td>ChocolateyVerbosity</td><td>bool</td><td>Verbosity for Chocolatey operations (true => Verbose)</td></tr>
+<tr><th colspan=3>Versioning</th></tr>
+<tr><td>BuildVersion</td><td>BuildVersion</td><td>Object used to calculate versions</td></tr>
+<tr><td>BranchName</td><td>string</td><td>Tne name of the current branch</td></tr>
+<tr><td>IsReleaseBranch</td><td>bool</td><td>True if we are on a release branch (release-x.y.z)</td></tr>
+<tr><td>PackageVersion</td><td>string</td><td>The full package version, including any pre-release suffix</td></tr>
+<tr><td>AssemblyVersion</td><td>string</td><td>The AssemblyVersion</td></tr>
+<tr><td>AssemblyFileVersion</td><td>string</td><td>The AssemblyFileVersion</td></tr>
+<tr><td>AssemblyInformationalVersion</td><td>string</td><td>The AssemblyInformationalVersion</td></tr>
+<tr><td>IsPreRelease</td><td>bool</td><td>True if this is a pre-release</td></tr>
+<tr><th colspan=3>Unit Testing</th></tr>
+<tr><td>UnitTests</td><td>string</td><td>Pattern used to recognize unit test assemblies</td></tr>
+<tr><td>UnitTestRunner</td><td>TestRunner</td><td>An instance of the runner used for unit tests</td></tr>
+<tr><th colspan=3>Packaging</th></tr>
+<tr><td>Packages</td><td>List&lt;PackageDefinition&gt;</td><td>List of package definitions for this project</td></tr>
+<tr><td>PackageTestLevel</td><td>int</td><td>Level of package testing: 1, 2 or 3</td></tr>
+<tr><td>MyGetPushUrl</td><td>string</td><td>URL for publishing to MyGet</td></tr>
+<tr><td>MyGetApiKey</td><td>string</td><td>MyGet API key</td></tr>
+<tr><td>NuGetPushUrl</td><td>string</td><td>URL for publishing to NuGet</td></tr>
+<tr><td>NuGetApiKey</td><td>string</td><td>NuGet API key</td></tr>
+<tr><td>ChocolateyPushUrl</td><td>string</td><td>URL for publishing to chocolatey</td></tr>
+<tr><td>ChocolateyApiKey</td><td>string</td><td>Chocolatey API Key</td></tr>
+<tr><td>GitHubOwner</td><td>string</td><td>The GitHub project owner, normally "TestCentric"</td></tr>
+<tr><td>GitHubRepository</td><td>string</td><td>The GitHub repository for this project</td></tr>
+<tr><td>GitHubAccessToken</td><td>string</td><td>The GitHub access token</td></tr>
+<tr><td>ShouldPublishToMyGet</td><td>bool</td><td>True if this build should publish to MyGet</td></tr>
+<tr><td>ShouldPublishToNuGet</td><td>bool</td><td>True if this build should publish to NuGet</td></tr>
+<tr><td>ShouldPublishToChocolatey</td><td>bool</td><td>True if this build should publish to Chocolatey</td></tr>
+<tr><td>IsProductionRelease</td><td>bool</td><td>True if this is a production release</td></tr>
+<tr><td>IsDevelopmentRelease</td><td>bool</td><td>True if this is a dev release, which publishes only to MyGet</td></tr>
+<tr><th colspan=3>Standard Directory Paths</th></tr>
+<tr><td>ProjectDirectory</td><td>string</td><td>Project root directory</td></tr>
+<tr><td>SourceDirectory</td><td>string</td><td>./src</td></tr>
+<tr><td>OutputDirectory</td><td>string</td><td>./bin/CONFIGURATION</td></tr>
+<tr><td>ZipDirectory</td><td>string</td><td>./zip</td></tr>
+<tr><td>NuGetDirectory</td><td>string</td><td>./nuget</td></tr>
+<tr><td>ChocolateyDirectory</td><td>string</td><td>./choco</td></tr>
+<tr><td>PackagingDirectory</td><td>string</td><td>./packaging</td></tr>
+<tr><td>ZipImageDirectory</td><td>string</td><td>./zipimage</td></tr>
+<tr><td>ToolsDirectory</td><td>string</td><td>./tools</td></tr>
+<tr><td>PackageTestDirectory</td><td>string</td><td>./packaging/tests</td></tr>
+<tr><td>NuGetTestDirectory</td><td>string</td><td>./packaging/tests/nuget</td></tr>
+<tr><td>ChocolateyTestDirectory</td><td>string</td><td>./packaging/tests/chocolatey</td></tr>
+<tr><td>ZipTestDirectory</td><td>string</td><td>./packaging/tests/zip</td></tr>
+<tr><td>PackageResultDirectory</td><td>string</td><td>./packaging/results</td></tr>
+<tr><td>NuGetResultDirectory</td><td>string</td><td>./packaging/results/NuGet</td></tr>
+<tr><td>ChocolateyResultDirectory</td><td>string</td><td>./packaging/results/chocolatey</td></tr>
+<tr><td>ZipResultDirectory</td><td>string</td><td>./packaging/results/zip</td></tr>
+<tr><td>LocalPackagesDirectory</td><td>string</td><td>../LocalPackages</td></tr>
+</table>
+<p>NOTES:</p>
+<ol>
+<li>There is only one PackageVersion for each project, which means that all packages produced in a build must use the same version.</li>
+<li>We are no longer using zip packages, so the various zip directories will be removed at some future date.</li>
+</ol>
+
+
+                                        </div>
+                                <div class="col-lg-2 p-md-0 m-md-0 bg-body">
+                                    <div id="right-sidebar" class="sidebar px-0 px-md-3 pt-3">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div id="footer" class="p-3 text-white">
+            <div class="container-xl">
+                <div class="row">
+    <div class="offset-lg-2 col-12 col-lg-8">
+        <div class="pt-2 font-size-sm text-muted text-center">
+            Generated By <a class="text-muted" href="https://statiq.dev">Statiq</a>
+        </div>
+    </div>
+</div>
+            </div>
+        </div>
+
+        <!-- Scripts -->
+        <script>
+            $(document).ready(function() {
+                quicklink.listen();
+
+                // Bootstrap tooltips
+                $('[data-toggle="tooltip"]').tooltip();
+
+				// Keeps the sidebars in view on wider viewports
+				let left = null;
+				let leftParent = null;
+				let right = null;
+				let rightParent = null;
+                function stickSidebars()
+				{
+				    if (left == null) {
+                        left = $('#left-sidebar');
+                        right = $('#right-sidebar');
+                    }
+                    if (left.length) {
+                        if (window.innerWidth >= 768) {
+                            if (leftParent == null) {
+                                leftParent = left.parent()[0];
+                            }
+                            if (leftParent) {
+                                let leftRect = leftParent.getBoundingClientRect();
+                                stickSidebar(left,  leftRect);
+                            }
+                        } else {
+                            left.css('position', 'relative');
+                            if (left.css('bottom') != 0) {
+                                left.css('bottom', '0');
+                            }
+                        }
+                    }
+                    if (right.length) {
+                        if (window.innerWidth >= 768) {
+                            if (rightParent == null) {
+                                rightParent = right.parent()[0];
+                            }
+                            if (rightParent) {
+                                let rightRect = rightParent.getBoundingClientRect();
+                                stickSidebar(right,  rightRect);
+                            }
+                        } else {
+                            right.css('position', 'relative');
+                            if (right.css('bottom') != 0) {
+                                right.css('bottom', '0');
+                            }
+                        }
+                    }
+				}
+				function stickSidebar(sidebar, rect) {
+                    // Bottom
+                    if (rect.bottom > window.innerHeight) {
+                        sidebar.css('bottom', rect.bottom - window.innerHeight + "px");
+                    } else {
+                        sidebar.css('bottom', 0);
+                    }
+                    // Top
+                    if (rect.top < 0) {
+                        sidebar.css('position', 'sticky');
+                    } else {
+                        sidebar.css('position', 'absolute');
+                    }
+				}
+				$(window).on("load", function() {
+				    stickSidebars();
+				});
+                $(window).scroll(function() {
+				    stickSidebars();
+				});
+				$(window).resize(function() {
+				    stickSidebars();
+				})
+
+                // Mermaid diagrams
+                mermaid.initialize(
+                {
+                    flowchart:
+                    {
+                        useMaxWidth: false
+                    },
+					startOnLoad: false,
+					cloneCssStyles: false
+                });
+                mermaid.init(undefined, ".mermaid");
+
+                // Remove the max-width setting that Mermaid sets
+                var mermaidSvg = $('.mermaid svg');
+                mermaidSvg.addClass('img-fluid');
+                mermaidSvg.css('max-width', '');
+
+                // Make it scrollable
+				var target = document.querySelector(".mermaid svg");
+				if(target !== null)
+				{
+					var panZoom = window.panZoom = svgPanZoom(target, {
+						zoomEnabled: true,
+						controlIconsEnabled: true,
+						fit: true,
+						center: true,
+                        maxZoom: 20,
+                        zoomScaleSensitivity: 0.6
+					});
+
+                    // Do the reset once right away to fit the diagram
+                    panZoom.resize();
+                    panZoom.fit();
+                    panZoom.center();
+
+                    $(window).resize(function(){
+                        panZoom.resize();
+                        panZoom.fit();
+                        panZoom.center();
+                    });
+				}
+            });
+        </script>
+
+        
+
+        
+    </body>
+</html>

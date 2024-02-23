@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="/assets/bootstrap/bootstrap.css" rel="stylesheet" />
+                <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Roboto+Slab:wght@400;700&family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet" data-no-mirror>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.26.0/themes/prism.css">
+        <link href="/assets/css/theme.css" rel="stylesheet" />
+        <link href="/assets/css/styles.css" rel="stylesheet" />
+        <link href="/css/overrides.css" rel="stylesheet" />
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/a1cad7ed9a.js" crossorigin="anonymous" data-no-mirror></script>
+        <script src="https://cdn.jsdelivr.net/npm/mermaid@8.4.8/dist/mermaid.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/svg-pan-zoom@3.6.1/dist/svg-pan-zoom.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/prismjs@1.26.0/components/prism-core.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/prismjs@1.26.0/plugins/autoloader/prism-autoloader.min.js" data-no-mirror></script>
+        <script src="https://cdn.jsdelivr.net/npm/quicklink@2.0.0/dist/quicklink.umd.js"></script>
+	    
+        <!-- Lunr search -->
+
+        
+
+        
+
+        <title>TestCentric - Package Definition</title>
+    </head>
+    <body class="d-flex flex-column">
+        <div class="flex-grow-1 d-flex flex-column">
+            <div class="bg-nav">
+                <div class="container-xl py-3">
+                    <div class="row">
+                        <div class="offset-lg-2 col-12 col-lg-8 px-0">
+                            <nav class="navbar navbar-expand-md navbar-light align-items-start">
+    <a class="navbar-brand" href="/">
+                <img id="logo" src="/img/NewTestCentricLogo.png" alt="TestCentric">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse-topnav" aria-controls="collapse-topnav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="collapse-topnav" class="collapse navbar-collapse flex-wrap">
+        <ul class="navbar-nav mr-auto">
+            
+        </ul>
+        <ul class="navbar-nav">
+                    <li class="nav-item">
+            <a class="nav-link" href="/docs">Documentation</a>
+        </li>
+
+            
+        </ul>
+    </div>
+</nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="flex-grow-1 d-flex flex-column">
+                    <!-- Titlebar -->
+                    <div id="titlebar" class="py-4">
+                        <div class="container-xl">
+                            <div class="row">
+                                <div class="offset-lg-2 col-12 col-lg-8 px-3 px-lg-0 w-100 d-flex flex-wrap align-items-end">
+                                    <div class="flex-grow-1">
+                                        <div class="breadcrumbs d-flex flex-column flex-md-row text-break">
+
+        <span><a href="/docs">Documentation</a></span>
+        <span><a href="/docs/fundamentals">Fundamentals</a></span>
+                                        </div>
+                                        <div class="text-white m-0 text-break title">
+
+Package Definition
+                                        </div>
+                                    </div>
+                                        <div class="navbar navbar-expand-md navbar-dark p-0">
+                                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#left-sidebar" aria-controls="left-sidebar" aria-expanded="false" aria-label="Toggle navigation">
+                                                <span class="navbar-toggler-icon"></span>
+                                            </button>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Under title -->
+                    <div id="undertitle">
+                        <div class="container-xl">
+                            <div class="row">
+                                    <div class="col-md-3 col-lg-2">
+                                    </div>
+                                    <div class="col-md-9 col-lg-8 bg-white">
+                                    </div>
+                                <div class="col-lg-2 d-none d-lg-block">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                <!-- Body -->
+                <div class="flex-grow-1 d-flex flex-column">
+                        <div class="container-xl flex-grow-1 d-flex flex-column">
+                            <div class="row flex-grow-1 align-items-stretch">
+                                        <div class="col-md-3 col-lg-2 p-md-0 m-md-0 bg-body">
+                                            <div id="left-sidebar" class="sidebar collapse px-0 px-md-3 pt-3">
+
+<div class="sidebar-root">
+
+<div class="sidebar-nav-item">
+    <a href="/docs">Documentation</a>
+</div>
+<div class="sidebar-nav-item">
+    <a href="/docs/overview">Overview</a>
+</div>
+<div class="sidebar-nav-item has-children">
+    <a href="/docs/fundamentals">Fundamentals</a>
+</div>                <div class="sidebar-nav-children">
+
+<div class="sidebar-nav-item">
+    <a href="/docs/fundamentals/directory-structure">Directory Structure</a>
+</div>
+<div class="sidebar-nav-item">
+    <a href="/docs/fundamentals/build.cake">build.cake</a>
+</div>
+<div class="sidebar-nav-item">
+    <a href="/docs/fundamentals/load-statement">Load Statement</a>
+</div>
+<div class="sidebar-nav-item">
+    <a href="/docs/fundamentals/build-settings">Build Settings</a>
+</div>
+<div class="sidebar-nav-item active">
+    <a href="/docs/fundamentals/package-definition">Package Definition</a>
+</div>
+<div class="sidebar-nav-item">
+    <a href="/docs/fundamentals/run-command">Run Command</a>
+</div>                </div>
+
+<div class="sidebar-nav-item has-children">
+    <a href="/docs/usage">Usage</a>
+</div>                <div class="sidebar-nav-children">
+
+<div class="sidebar-nav-item">
+    <a href="/docs/usage/usage">Usage</a>
+</div>                </div>
+</div>                                            </div>
+                                        </div>
+                                        <div id="content" class="col-md-9 col-lg-8 p-4 pt-md-0 bg-white">
+<style>
+    td, th { border: solid 1px black; padding: 0 10px }
+	th { background-color: #eee}
+</style>
+<p>Currently, <code>TestCentric.Cake.Recipe</code> supports multiple packages generated from a single build. The recipe was designed in this way becuase we have historically had a few projects which generated a number of different packages. In addition, some projects produce a single logical package using multiple formats. Consequently, now and for the forseeable future, we will continue to allow more than one package per project.</p>
+<p>A packages is defined defined by creatimg an instance of <code>PackageDefinition</code>, which is an abstract class. In your script, you use one or more of the derived concrete classes: <code>NuGetPackage</code>, <code>ChocolateyPackage</code>, <code>ZipPackage</code> or <code>RecipePackage</code>. Package definitions must follow the call to <code>BuildSettings.Initialize</code>. Each package definition is then added to the <code>BuildSettings.Packages</code> property.</p>
+<h3 id="package-types">Package Types</h3>
+<h4 id="nugetpackage">NuGetPackage</h4>
+<p><code>NuGetPackage</code> is our most common package type, used for packages we publish at <strong>nuget.org</strong>. Its constructor is as follows:</p>
+<pre><code>public NuGetPackage(
+    string id,
+    string title = null,                               
+    string description = null,
+    string summary = null,
+    string[] releaseNotes = null,
+    string[] tags = null,
+    string source = null,
+    string basePath = null,
+    TestRunner testRunner = null,
+    string extraTestArguments = null,
+    PackageCheck[] checks = null,
+    PackageCheck[] symbols = null,
+    IEnumerable&lt;PackageTest&gt; tests = null, 
+    PackageReference[] preloadedExtensions = null,
+    PackageContent packageContent = null)
+</code></pre>
+<p>The required <code>id</code> argument is used as the package id. Arguments <code>title</code>, <code>description</code>, <code>summary</code>, <code>releaseNotes</code> and <code>tags</code> are used in creating the corresponding metadata elements in the package.</p>
+<p>The remaining arguments are discussed separately in the sections that follow.</p>
+<h4 id="chocolateypackage">ChocolateyPackage</h4>
+<p>A <code>ChocolateyPackage</code> is also a nuget package, but is tailored for publication at <strong>chocolatey.org</strong>, which has different naming standards and additional package content. The constructor has all the same arguments as for a <code>NuGetPackage</code> although the <code>symbol</code> argument is ignored.</p>
+<pre><code>public ChocolateyPackage(
+    string id,
+    string summary = null,
+    string description = null,
+    string[] releaseNotes = null,
+    string[] tags = null,
+    string source = null, 
+    string basePath = null,
+    TestRunner testRunner = null,
+    string extraTestArguments = null,
+    PackageCheck[] checks = null,
+    PackageCheck[] symbols = null,
+    IEnumerable&lt;PackageTest&gt; tests = null,
+    PackageReference[] preloadedExtensions = null,
+    PackageContent packageContent = null)
+</code></pre>
+<h4 id="zippackage">ZipPackage</h4>
+<p>We previously used <code>ZipPackage</code> to provide alternative distributions for some of our nuget packages. Although we no longer do this, the package type is still supported in case we need it and to allow re-creation of older packages when necessary. This package type
+will most likely be removed in a future release.</p>
+<pre><code>public ZipPackage(
+    string id,
+    string source = null,
+    string basePath = null,
+    TestRunner testRunner = null,
+    PackageCheck[] checks = null,
+    IEnumerable&lt;PackageTest&gt; tests = null,
+    PackageReference[] preloadedExtensions = null,
+    ExtensionSpecifier[] bundledExtensions = null)
+</code></pre>
+<h4 id="recipepackage">RecipePackage</h4>
+<p><code>RecipePackage</code> derives from <code>NuGetPackage</code> and differs from it because there is never a solution file to build, only <code>cake</code> files delivered as content. The <code>TestCentric.Cake.Recipe</code> package is of this type.</p>
+<pre><code>public RecipePackage(
+    string id,
+    string title = null,
+    string description = null,
+    string summary = null,
+    string[] releaseNotes = null,
+    string[] tags = null,
+    string basePath = null,
+    string content = &quot;./recipe/*.cake&quot;)
+</code></pre>
+<p>The <code>content</code> argument is a pattern providing the list of files to be included.</p>
+<h3 id="building-packages">Building Packages</h3>
+<p>Packages are built in dfferent ways depending on the value of the <code>source</code>, <code>basepath</code> and <code>packageContent</code> arguments.</p>
+<h3 id="verifying-packages">Verifying Packages</h3>
+<p>If the <code>checks</code> argument is non-null the package content is checked after it is built.</p>
+<h3 id="testing-packages">Testing Packages</h3>
+<p>If a package contains tests (<code>PackageTests</code> property), they are run after it has been successfully verified.</p>
+
+
+                                        </div>
+                                <div class="col-lg-2 p-md-0 m-md-0 bg-body">
+                                    <div id="right-sidebar" class="sidebar px-0 px-md-3 pt-3">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div id="footer" class="p-3 text-white">
+            <div class="container-xl">
+                <div class="row">
+    <div class="offset-lg-2 col-12 col-lg-8">
+        <div class="pt-2 font-size-sm text-muted text-center">
+            Generated By <a class="text-muted" href="https://statiq.dev">Statiq</a>
+        </div>
+    </div>
+</div>
+            </div>
+        </div>
+
+        <!-- Scripts -->
+        <script>
+            $(document).ready(function() {
+                quicklink.listen();
+
+                // Bootstrap tooltips
+                $('[data-toggle="tooltip"]').tooltip();
+
+				// Keeps the sidebars in view on wider viewports
+				let left = null;
+				let leftParent = null;
+				let right = null;
+				let rightParent = null;
+                function stickSidebars()
+				{
+				    if (left == null) {
+                        left = $('#left-sidebar');
+                        right = $('#right-sidebar');
+                    }
+                    if (left.length) {
+                        if (window.innerWidth >= 768) {
+                            if (leftParent == null) {
+                                leftParent = left.parent()[0];
+                            }
+                            if (leftParent) {
+                                let leftRect = leftParent.getBoundingClientRect();
+                                stickSidebar(left,  leftRect);
+                            }
+                        } else {
+                            left.css('position', 'relative');
+                            if (left.css('bottom') != 0) {
+                                left.css('bottom', '0');
+                            }
+                        }
+                    }
+                    if (right.length) {
+                        if (window.innerWidth >= 768) {
+                            if (rightParent == null) {
+                                rightParent = right.parent()[0];
+                            }
+                            if (rightParent) {
+                                let rightRect = rightParent.getBoundingClientRect();
+                                stickSidebar(right,  rightRect);
+                            }
+                        } else {
+                            right.css('position', 'relative');
+                            if (right.css('bottom') != 0) {
+                                right.css('bottom', '0');
+                            }
+                        }
+                    }
+				}
+				function stickSidebar(sidebar, rect) {
+                    // Bottom
+                    if (rect.bottom > window.innerHeight) {
+                        sidebar.css('bottom', rect.bottom - window.innerHeight + "px");
+                    } else {
+                        sidebar.css('bottom', 0);
+                    }
+                    // Top
+                    if (rect.top < 0) {
+                        sidebar.css('position', 'sticky');
+                    } else {
+                        sidebar.css('position', 'absolute');
+                    }
+				}
+				$(window).on("load", function() {
+				    stickSidebars();
+				});
+                $(window).scroll(function() {
+				    stickSidebars();
+				});
+				$(window).resize(function() {
+				    stickSidebars();
+				})
+
+                // Mermaid diagrams
+                mermaid.initialize(
+                {
+                    flowchart:
+                    {
+                        useMaxWidth: false
+                    },
+					startOnLoad: false,
+					cloneCssStyles: false
+                });
+                mermaid.init(undefined, ".mermaid");
+
+                // Remove the max-width setting that Mermaid sets
+                var mermaidSvg = $('.mermaid svg');
+                mermaidSvg.addClass('img-fluid');
+                mermaidSvg.css('max-width', '');
+
+                // Make it scrollable
+				var target = document.querySelector(".mermaid svg");
+				if(target !== null)
+				{
+					var panZoom = window.panZoom = svgPanZoom(target, {
+						zoomEnabled: true,
+						controlIconsEnabled: true,
+						fit: true,
+						center: true,
+                        maxZoom: 20,
+                        zoomScaleSensitivity: 0.6
+					});
+
+                    // Do the reset once right away to fit the diagram
+                    panZoom.resize();
+                    panZoom.fit();
+                    panZoom.center();
+
+                    $(window).resize(function(){
+                        panZoom.resize();
+                        panZoom.fit();
+                        panZoom.center();
+                    });
+				}
+            });
+        </script>
+
+        
+
+        
+    </body>
+</html>
