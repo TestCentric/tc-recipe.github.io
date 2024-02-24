@@ -1,23 +1,25 @@
-<!DOCTYPE html><html><head>
+<!DOCTYPE html>
+<html>
+    <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=Edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link href="/assets/bootstrap/bootstrap.css" rel="stylesheet">
-                <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&amp;family=Roboto+Slab:wght@400;700&amp;family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&amp;display=swap" rel="stylesheet" data-no-mirror="">
+        <link href="/assets/bootstrap/bootstrap.css" rel="stylesheet" />
+                <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Roboto+Slab:wght@400;700&family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet" data-no-mirror>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.26.0/themes/prism.css">
-        <link href="/assets/css/theme.css" rel="stylesheet">
-        <link href="/assets/css/styles.css" rel="stylesheet">
-        <link href="/css/overrides.css" rel="stylesheet">
+        <link href="/assets/css/theme.css" rel="stylesheet" />
+        <link href="/assets/css/styles.css" rel="stylesheet" />
+        <link href="/css/overrides.css" rel="stylesheet" />
 
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-        <script src="https://kit.fontawesome.com/a1cad7ed9a.js" crossorigin="anonymous" data-no-mirror=""></script>
+        <script src="https://kit.fontawesome.com/a1cad7ed9a.js" crossorigin="anonymous" data-no-mirror></script>
         <script src="https://cdn.jsdelivr.net/npm/mermaid@8.4.8/dist/mermaid.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/svg-pan-zoom@3.6.1/dist/svg-pan-zoom.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/prismjs@1.26.0/components/prism-core.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/prismjs@1.26.0/plugins/autoloader/prism-autoloader.min.js" data-no-mirror=""></script>
+        <script src="https://cdn.jsdelivr.net/npm/prismjs@1.26.0/plugins/autoloader/prism-autoloader.min.js" data-no-mirror></script>
         <script src="https://cdn.jsdelivr.net/npm/quicklink@2.0.0/dist/quicklink.umd.js"></script>
 	    
         <!-- Lunr search -->
@@ -26,7 +28,7 @@
 
         
 
-        <title>TestCentric - Directory Structure</title>
+        <title>TestCentric - Command Options</title>
     </head>
     <body class="d-flex flex-column">
         <div class="flex-grow-1 d-flex flex-column">
@@ -69,11 +71,11 @@
                                         <div class="breadcrumbs d-flex flex-column flex-md-row text-break">
 
         <span><a href="/docs">Documentation</a></span>
-        <span><a href="/docs/fundamentals">Fundamentals</a></span>
+        <span><a href="/docs/usage">Usage</a></span>
                                         </div>
                                         <div class="text-white m-0 text-break title">
 
-Directory Structure
+Command Options
                                         </div>
                                     </div>
                                         <div class="navbar navbar-expand-md navbar-dark p-0">
@@ -118,7 +120,7 @@ Directory Structure
     <a href="/docs/fundamentals">Fundamentals</a>
 </div>                <div class="sidebar-nav-children">
 
-<div class="sidebar-nav-item active">
+<div class="sidebar-nav-item">
     <a href="/docs/fundamentals/directory-structure">Directory Structure</a>
 </div>
 <div class="sidebar-nav-item">
@@ -141,35 +143,64 @@ Directory Structure
     <a href="/docs/usage">Usage</a>
 </div>                <div class="sidebar-nav-children">
 
-<div class="sidebar-nav-item">
+<div class="sidebar-nav-item active">
     <a href="/docs/usage/command-options">Command Options</a>
 </div>                </div>
 </div>                                            </div>
                                         </div>
                                         <div id="content" class="col-md-9 col-lg-8 p-4 pt-md-0 bg-white">
-<p>The recipe assumes that the standard TestCentric project directory structure is used. While it's possible to change the structure, it might cause some features to fail.</p>
-<pre><code>$ (Project Root)
-  bin/                      // Output directories for the build
-    Debug/
-    Release/
-  choco/                    // nuspecs and associated files for chooclatey.org
-  nuget/                    // nuspecs and associated files for nuget.org
-  packaging/                // Packages are created and tested here
-  src/
-    PROJECT                 // One folder per project
-      PROJECT.csproj
-      source code
-  build.cake                // The primary build script
-  build.cmd                 // Runs the build script under windwows
-  build.ps1                 // Runs the build script under Windows powershell
-  build.sh                  // Runs the build script under Linux
-  LICENSE.txt               // License for this project
-  NuGet.config              // Configuration file for nuget
-  README.md                 // Project README
-  SOLUTION.sln              // Our solution file
-  testcentric.png           // TestCentric icon
-</code></pre>
-<p>Note that the <code>choco</code> and <code>nuget</code> directories are only present if the project creates the corresponding package type using a nuspec. Of course, it's possible to create the packages without a nuspec, as discussed in <a href="/docs/fundamentals/package-definition">Package Definition</a>.</p>
+<h2 id="recipe-options">Recipe Options</h2>
+<p>The recipe supports a number of standard arguments for use in any project
+that uses it. Additional arguments may be supported directly by the user's
+<code>build.cake</code> if necessary but must not conflict with the built-in arguments.</p>
+<p>Options taking a value may use  <code>=</code> or space to separate the name
+from the value.</p>
+<h4 id="target-ttarget">--target, -t=TARGET</h4>
+<p>The name of the TARGET task to be run, e.g. Test. Defaults to &quot;Build.&quot; Use
+<code>--description</code> to display a list of available targets.</p>
+<h4 id="configuration-cconfig">--configuration, -c=CONFIG</h4>
+<p>The name of the configuration to build, test and/or package, e.g. Debug.
+Defaults to Release.</p>
+<h4 id="packageversion-packageversion">--packageVersion, --package=VERSION</h4>
+<p>Specifies the full package version, including any pre-release
+suffix. This version is used directly instead of the default
+version from the script or that calculated by GitVersion.
+Note that all other versions (AssemblyVersion, etc.) are
+derived from the package version.</p>
+<p>NOTE: We can't use &quot;version&quot; since that's an argument to Cake itself.</p>
+<h4 id="testlevel-levellevel">--testLevel, --level=LEVEL</h4>
+<p>Specifies the level of package testing, which is normally set
+automatically for different types of builds like CI, PR, etc.
+Used by developers to test packages locally without creating
+a PR or publishing the package. Defined levels are</p>
+<ol>
+<li>Normal CI tests run every time you build a package</li>
+<li>Adds more tests for PRs and Dev builds uploaded to MyGet</li>
+<li>Adds even more tests prior to publishing a release</li>
+</ol>
+<h4 id="tracelevel">--trace=LEVEL</h4>
+<p>Specifies the default trace level for this run. Values are Off,
+Error, Warning, Info or Debug. Default is value of environment
+variable TESTCENTRIC_INTERNAL_TRACE_LEVEL if set. If not,
+tracing is turned Off.</p>
+<h4 id="nobuild">--nobuild</h4>
+<p>Indicates that the Build task should not be run even if other
+tasks depend on it. The existing build is used instead.</p>
+<h4 id="nopush">--nopush</h4>
+<p>Indicates that no publishing or releasing should be done. If
+publish or release targets are run, a message is displayed.</p>
+<h4 id="usage">--usage</h4>
+<p>Displays this help message. No targets are run.</p>
+<h2 id="cake-options">Cake Options</h2>
+<p>The following Cake options may also be useful. They are actually acted upon by cake itself, without invoking your script.</p>
+<h4 id="version">--version</h4>
+<p>Displays the cake version in use.</p>
+<h4 id="description">--description</h4>
+<p>Displays a list of the available tasks (targets).</p>
+<h4 id="tree">--tree</h4>
+<p>Displays the task dependency tree</p>
+<h4 id="help">--help</h4>
+<p>Displays help information for cake itself.</p>
 
 
                                         </div>
@@ -319,5 +350,5 @@ Directory Structure
         
 
         
-    
-</body></html>
+    </body>
+</html>
